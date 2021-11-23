@@ -1,0 +1,277 @@
+@import url("https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@400;500;600;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
+@font-face {
+  font-family: "awesome";
+  src: url("../fonts/webfonts/fa-brands-400.eot") format("embedded-opentype"), url("../fonts/webfonts/fa-brands-400.otf") format("opentype"), url("../fonts/webfonts/fa-brands-400.woff") format("woff"), url("../fonts/webfonts/fa-brands-400.woff2") format("woff"), url("../fonts/webfonts/fa-brands-400.ttf") format("truetype"), url("../fonts/webfonts/fa-brands-400.svg#BebasNeueBold") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Gilroy";
+  src: url("../fonts/Gilroy/Gilroy-ExtraBold.eot");
+  src: local("../fonts/Gilroy/Gilroy ExtraBold"), local("../fonts/Gilroy/Gilroy-ExtraBold"), url("Gilroy-ExtraBold.eot?#iefix") format("embedded-opentype"), url("../fonts/Gilroy/Gilroy-ExtraBold.woff") format("woff"), url("../fonts/Gilroy/Gilroy-ExtraBold.ttf") format("truetype");
+  font-weight: 800;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Gilroy";
+  src: url("../fonts/Gilroy/Gilroy-Light.eot");
+  src: local("../fonts/Gilroy/Gilroy Light"), local("../fonts/Gilroy/Gilroy-Light"), url("../fonts/Gilroy/Gilroy-Light.eot?#iefix") format("embedded-opentype"), url("../fonts/Gilroy/Gilroy-Light.woff") format("woff"), url("../fonts/Gilroy/Gilroy-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+.b-active {
+  color: #e3c5aa !important;
+}
+
+body {
+  font-family: "Gilroy";
+  background-image: url(../images/bg.png);
+}
+body header {
+  font-weight: 500;
+}
+
+.b-hotels-header {
+  background-image: url(../images/Rectangle44.svg);
+}
+
+nav .b-navbar-nav {
+  margin-left: 240px;
+}
+nav .b-navbar-nav .b-nav-item:first-child {
+  margin-left: 0;
+}
+nav .b-navbar-nav .b-nav-item {
+  margin-left: 30px;
+}
+nav .b-social {
+  margin-left: 55px;
+}
+nav .b-social .b-social-network:first-child {
+  margin-left: 0;
+}
+nav .b-social .b-social-network {
+  margin-left: 25px;
+}
+nav .b-social .b-social-network .b-social-pages {
+  text-decoration: none;
+  color: #e3c5aa;
+}
+
+.b-banner {
+  font-family: "Gilroy";
+  font-weight: 500;
+  color: #e3c5aa;
+  font-size: 18px;
+  margin-top: 30px;
+}
+.b-banner .b-title .b-subtitle {
+  line-height: 27px;
+}
+.b-banner .b-title h1 {
+  font-weight: 800;
+  font-size: 40px;
+  line-height: 52px;
+  color: #2f383e;
+}
+.b-banner .b-dividors .b-linear:first-child {
+  width: 106px;
+  height: 3px;
+  background-color: #e3c5aa;
+}
+.b-banner .b-dividors .b-linear {
+  width: 200px;
+  height: 3px;
+  background-color: #e3c5aa;
+  margin: 1px 5px;
+}
+.b-banner .b-dividors .b-oval {
+  width: 20px;
+  height: 6px;
+  background-color: #e3c5aa;
+  border-radius: 10px;
+}
+.b-banner .b-search-hotels {
+  margin-top: 10px;
+}
+.b-banner .b-search-hotels p {
+  color: #2f383e;
+  font-weight: 500;
+  font-size: 18px;
+}
+.b-banner .b-search-puncts {
+  margin-top: -15px;
+}
+.b-banner .select {
+  width: 200px;
+  height: 40px;
+  padding-left: 15px;
+  padding-right: 10px;
+  border: none;
+  background-image: url(../images/Polygon3.png);
+  background-repeat: no-repeat;
+  -webkit-appearance: none;
+  background-position-x: 175px;
+  background-position-y: 50%;
+  border-radius: 7px;
+  margin-left: 5px;
+}
+.b-banner input {
+  padding-left: 15px;
+  height: 40px;
+  width: 180px;
+  border: none;
+  border-radius: 7px;
+  margin-left: 5px;
+}
+.b-banner input::-webkit-input-placeholder {
+  color: #e3c5aa;
+}
+.b-banner input::-moz-placeholder {
+  color: #e3c5aa;
+}
+.b-banner input:-ms-input-placeholder {
+  color: #e3c5aa;
+}
+.b-banner input::-ms-input-placeholder {
+  color: #e3c5aa;
+}
+.b-banner input::placeholder {
+  color: #e3c5aa;
+}
+.b-banner button {
+  color: #f99c45;
+  font-size: 20px;
+  font-weight: 800;
+  text-align: center;
+  line-height: 24px;
+  border: none;
+  height: 40px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#ffffff), color-stop(47.4%, #f9f9f9), to(#eeeff5));
+  background: linear-gradient(180deg, #ffffff 0%, #f9f9f9 47.4%, #eeeff5 100%);
+  -webkit-box-shadow: 0px 9px 15px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 9px 15px rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+  padding: 0 25px;
+  margin-left: 20px;
+}
+
+.b-hotels-cards {
+  background: radial-gradient(67.04% 67.04% at 52.62% 61.84%, #FBF3D7 54.35%, #F6EBCC 100%), -webkit-gradient(linear, left bottom, left top, from(#C4C4C4), to(#C4C4C4));
+  background: radial-gradient(67.04% 67.04% at 52.62% 61.84%, #FBF3D7 54.35%, #F6EBCC 100%), linear-gradient(0deg, #C4C4C4, #C4C4C4);
+  margin-top: 35px;
+  border-left: 15px solid;
+  border-right: 15px solid;
+  -o-border-image: url(../images/border-cards.png) 15 round round;
+  border-image: url(../images/border-cards.png) 15 round round;
+}
+.b-hotels-cards i.fas {
+  color: #F99C45;
+}
+.b-hotels-cards i.fa-plane {
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+}
+.b-hotels-cards span {
+  margin-right: 5px;
+}
+.b-hotels-cards .b-hotels-cards-header {
+  text-align: center;
+  -o-border-image: url(../images/border-cards-top.png) 15 round round;
+  border-image: url(../images/border-cards-top.png) 15 round round;
+  border-top: 15px solid;
+}
+.b-hotels-cards .b-hotels-cards-header p {
+  font-weight: 500;
+  font-size: 18px;
+  color: #2F383E;
+  text-align: left;
+  margin-left: 20px;
+  font-style: normal;
+}
+.b-hotels-cards ul {
+  margin-left: -10px;
+  margin-top: -20px;
+}
+.b-hotels-cards ul li {
+  list-style-type: none;
+  font-size: 14px;
+  font-weight: 400;
+}
+.b-hotels-cards ul li:first-child {
+  margin-left: 3px;
+}
+.b-hotels-cards .b-hotels-cards-footer {
+  -o-border-image: url(../images/border-cards-top.png) 15 round round;
+  border-image: url(../images/border-cards-top.png) 15 round round;
+  border-bottom: 15px solid;
+}
+.b-hotels-cards .b-hotels-cards-footer p {
+  margin-left: 20px;
+}
+.b-hotels-cards .b-hotels-cards-footer .b-hotels-about {
+  margin-left: 20px;
+}
+.b-hotels-cards .b-hotels-cards-footer .b-hotels-about a {
+  color: #F99C45;
+  font-size: 14px;
+  font-weight: 400;
+}
+.b-hotels-cards .b-col {
+  margin-top: -20px;
+}
+
+.b-page-link {
+  color: #2F383E;
+}
+
+.b-page-link {
+  background-color: inherit;
+  border: none;
+}
+
+.b-page-item.first, .b-page-item.last {
+  background-color: inherit;
+}
+
+.b-page-item {
+  background-color: #fff;
+  margin: 0 5px;
+}
+.b-page-item i.fas {
+  color: #F99C45;
+}
+
+.b-pagination {
+  margin-top: 40px;
+  margin-left: 21%;
+}
+
+footer {
+  margin-top: 130px;
+  padding: 5px 0;
+  background-image: url(../images/bg-footer.png);
+}
+footer .b-footer-info {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+footer .b-footer-info .b-footer-logo a {
+  text-decoration: none;
+  color: #fff;
+  font-family: "Baloo Bhai 2";
+  font-weight: 400;
+  font-style: normal;
+  font-size: 30px;
+}
+footer .b-footer-info-text {
+  color: #fff;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+}
