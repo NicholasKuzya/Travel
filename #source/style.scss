@@ -36,6 +36,8 @@
 $primary-color: #e3c5aa;
 $icon-color: #F99C45;
 $bg-footer-color: #39342C;
+$breadcrumb-divider: quote("»");
+$breadcrumb-divider-color: $primary-color;
 
 .b-active
 {
@@ -47,6 +49,7 @@ body {
 
 	& header {
 		font-weight: 500;
+		filter: drop-shadow(0px 5px 15px rgba(0, 0, 0, 0.1));
 	}
 }
 
@@ -56,6 +59,11 @@ body {
 	background-image: url(../images/Rectangle44.svg);
 }
 nav {
+	color: #2F383E;
+	.b-collapse
+	{
+		justify-content: right;
+	}
 	.b-navbar-nav {
 		margin-left: 240px;
 
@@ -72,7 +80,7 @@ nav {
 			margin-left: 0;
 		}
 		& .b-social-network {
-			margin-left: 25px;
+			margin-left: 30px;
 			& .b-social-pages {
 				text-decoration: none;
 				color: $primary-color;
@@ -87,8 +95,21 @@ nav {
 	font-size: 18px;
 	margin-top: 30px;
 	& .b-title {
-		& .b-subtitle {
-			line-height: 27px;
+		& nav
+		{	
+				& .b-breadcrumb {
+						& a {
+							text-decoration: none;
+							color: $primary-color;
+							font-size: 18px;
+						}
+						& .active{
+							color: $icon-color;
+						}
+				}
+				& .b-breadcrumb-item::before {
+					color: $breadcrumb-divider-color;
+				}
 		}
 		& h1 {
 			font-weight: 800;
@@ -98,6 +119,7 @@ nav {
 		}
 	}
 	& .b-dividors {
+		margin-top: 25px;
 		& .b-linear:first-child {
 			width: 106px;
 			height: 3px;
@@ -117,7 +139,7 @@ nav {
 		}
 	}
 	.b-search-hotels {
-		margin-top: 10px;
+		margin-top: 20px;
 
 		p {
 			color: #2f383e;
@@ -129,7 +151,7 @@ nav {
 		margin-top: -15px;
 	}
 	.select {
-		width: 200px;
+		width: 270px;
 		height: 40px;
 		padding-left: 15px;
 		padding-right: 10px;
@@ -137,18 +159,20 @@ nav {
 		background-image: url(../images/Polygon3.png);
 		background-repeat: no-repeat;
 		-webkit-appearance: none;
-		background-position-x: 175px;
+		background-position-x: 225px;
 		background-position-y: 50%;
 		border-radius: 7px;
 		margin-left: 5px;
+		box-shadow: inset 0px 3px 6px rgba(0, 0, 0, 0.06);
 	}
 	input {
 		padding-left: 15px;
 		height: 40px;
-		width: 180px;
+		width: 220px;
 		border: none;
 		border-radius: 7px;
 		margin-left: 5px;
+		box-shadow: inset 0px 3px 6px rgba(0, 0, 0, 0.06);
 	}
 	& input::placeholder {
 		color: $primary-color;
@@ -180,8 +204,17 @@ nav {
     -webkit-border-image: url(../images/border-cards.png) 15 round round; 
     -o-border-image: url(../images/border-cards.png) 15 round round;
     border-image: url(../images/border-cards.png) 15 round round;
+	position: relative;
+
+			& .b-cards-link
+			{
+				position: absolute;
+				width: 100%;
+				height: 100%;
+				z-index: 10;
+			}
 	
-			& i.fas
+			& i.fas, i.far
 			{
 				color: $icon-color;
 			}
@@ -290,13 +323,14 @@ nav {
 footer
 {
 		margin-top: 130px;
-		padding: 5px 0;
+		height: 90px;
 		background-image: url(../images/bg-footer.png);
 
 	.b-footer-info
 	{
 		justify-content: space-between;
 		align-items: center;
+		padding-top: 2%;
 
 				.b-footer-logo
 				{
