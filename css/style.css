@@ -164,9 +164,6 @@ body header {
   background-image: url(../images/Rectangle44.svg);
 }
 
-nav {
-  color: #2F383E;
-}
 nav .b-collapse {
   -webkit-box-pack: right;
       -ms-flex-pack: right;
