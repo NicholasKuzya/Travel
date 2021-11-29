@@ -274,6 +274,7 @@ nav {
 					& .b-nav-link {
 						font-weight: 500;
 						color: #2F383E;
+						font-size: 18px;
 					}
 		}
 	}
@@ -348,10 +349,11 @@ nav {
 			color: #2f383e;
 			font-weight: 500;
 			font-size: 18px;
+			line-height: 27px;
 		}
 	}
 	.b-search-puncts {
-		margin-top: -15px;
+		margin-top: -5px;
 	}
 	.select {
 		width: 270px;
@@ -437,6 +439,7 @@ nav {
 				-o-border-image: url(../images/border-cards-top.png) 15 round round;
 				border-image: url(../images/border-cards-top.png) 15 round round;
 				border-top: 15px solid;
+				margin-bottom: 10px;
 
 						p
 						{
@@ -449,14 +452,16 @@ nav {
 						}
 			}
 			ul
-			{
+			{	
+
 					margin-left: -10px;
-					margin-top: -20px;
+					margin-top: -10px;
 				& li
 				{
 					list-style-type: none;
 					font-size: 14px;
 					font-weight: 400;
+					margin-bottom: 8px;
 				}
 				& li:first-child
 				{
@@ -471,6 +476,7 @@ nav {
 				-o-border-image: url(../images/border-cards-top.png) 15 round round;
 				border-image: url(../images/border-cards-top.png) 15 round round;
 				border-bottom: 15px solid;
+				margin-top: 35px;
 
 					p
 					{
@@ -542,7 +548,7 @@ footer
 							text-decoration: none;
 							color: #fff;
 							font-family: 'Baloo Bhai 2';
-							font-weight: 400;
+							font-weight: 700;
 							font-style: normal;
 							font-size: 30px;
 						}

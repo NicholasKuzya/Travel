@@ -181,6 +181,7 @@ nav .b-navbar-nav .b-nav-item {
 nav .b-navbar-nav .b-nav-item .b-nav-link {
   font-weight: 500;
   color: #2F383E;
+  font-size: 18px;
 }
 nav .b-social {
   margin-left: 55px;
@@ -247,9 +248,10 @@ nav .b-social .b-social-network .b-social-pages {
   color: #2f383e;
   font-weight: 500;
   font-size: 18px;
+  line-height: 27px;
 }
 .b-banner .b-search-puncts {
-  margin-top: -15px;
+  margin-top: -5px;
 }
 .b-banner .select {
   width: 270px;
@@ -340,6 +342,7 @@ nav .b-social .b-social-network .b-social-pages {
   -o-border-image: url(../images/border-cards-top.png) 15 round round;
   border-image: url(../images/border-cards-top.png) 15 round round;
   border-top: 15px solid;
+  margin-bottom: 10px;
 }
 .b-hotels-cards .b-hotels-cards-header p {
   font-weight: 500;
@@ -351,12 +354,13 @@ nav .b-social .b-social-network .b-social-pages {
 }
 .b-hotels-cards ul {
   margin-left: -10px;
-  margin-top: -20px;
+  margin-top: -10px;
 }
 .b-hotels-cards ul li {
   list-style-type: none;
   font-size: 14px;
   font-weight: 400;
+  margin-bottom: 8px;
 }
 .b-hotels-cards ul li:first-child {
   margin-left: 3px;
@@ -365,6 +369,7 @@ nav .b-social .b-social-network .b-social-pages {
   -o-border-image: url(../images/border-cards-top.png) 15 round round;
   border-image: url(../images/border-cards-top.png) 15 round round;
   border-bottom: 15px solid;
+  margin-top: 35px;
 }
 .b-hotels-cards .b-hotels-cards-footer p {
   margin-left: 20px;
@@ -425,7 +430,7 @@ footer .b-footer-info .b-footer-logo a {
   text-decoration: none;
   color: #fff;
   font-family: "Baloo Bhai 2";
-  font-weight: 400;
+  font-weight: 700;
   font-style: normal;
   font-size: 30px;
 }
