@@ -160,7 +160,7 @@ body header {
           filter: drop-shadow(0px 5px 15px rgba(0, 0, 0, 0.1));
 }
 
-.b-hotels-header {
+.b-header {
   background-image: url(../images/Rectangle44.svg);
 }
 
@@ -183,6 +183,9 @@ nav .b-navbar-nav .b-nav-item .b-nav-link {
   color: #2F383E;
   font-size: 18px;
 }
+nav .b-navbar-nav .b-nav-item .b-nav-link:hover {
+  color: #F99C45;
+}
 nav .b-social {
   margin-left: 55px;
 }
@@ -195,6 +198,9 @@ nav .b-social .b-social-network {
 nav .b-social .b-social-network .b-social-pages {
   text-decoration: none;
   color: #e3c5aa;
+}
+nav .b-social .b-social-network .b-social-pages:hover {
+  color: #F99C45;
 }
 
 .b-banner {
@@ -269,6 +275,7 @@ nav .b-social .b-social-network .b-social-pages {
   margin-left: 5px;
   -webkit-box-shadow: inset 0px 3px 6px rgba(0, 0, 0, 0.06);
           box-shadow: inset 0px 3px 6px rgba(0, 0, 0, 0.06);
+  cursor: pointer;
 }
 .b-banner input {
   padding-left: 15px;
@@ -310,8 +317,14 @@ nav .b-social .b-social-network .b-social-pages {
   -webkit-box-shadow: 0px 9px 15px rgba(0, 0, 0, 0.1);
           box-shadow: 0px 9px 15px rgba(0, 0, 0, 0.1);
   border-radius: 4px;
-  padding: 0 25px;
+  padding-left: 25px;
+  padding-right: 25px;
   margin-left: 20px;
+}
+
+.b-hotels-cards:hover {
+  filter: gray;
+  -webkit-filter: grayscale(1);
 }
 
 .b-hotels-cards {

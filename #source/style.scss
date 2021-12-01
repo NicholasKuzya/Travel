@@ -253,7 +253,7 @@ body {
 
 //------------- HOTELS -------------//
 
-.b-hotels-header {
+.b-header {
 	background-image: url(../images/Rectangle44.svg);
 }
 nav {
@@ -276,6 +276,9 @@ nav {
 						color: #2F383E;
 						font-size: 18px;
 					}
+					& .b-nav-link:hover {
+						color: $icon-color;
+					}
 		}
 	}
 	& .b-social {
@@ -288,6 +291,9 @@ nav {
 			& .b-social-pages {
 				text-decoration: none;
 				color: $primary-color;
+			}
+			& .b-social-pages:hover {
+				color: $icon-color;
 			}
 		}
 	}
@@ -370,6 +376,7 @@ nav {
 		border-radius: 7px;
 		margin-left: 5px;
 		box-shadow: inset 0px 3px 6px rgba(0, 0, 0, 0.06);
+		cursor: pointer;
 	}
 	input {
 		padding-left: 15px;
@@ -397,9 +404,14 @@ nav {
 		background: linear-gradient(180deg, #ffffff 0%, #f9f9f9 47.4%, #eeeff5 100%);
 		box-shadow: 0px 9px 15px rgba(0, 0, 0, 0.1);
 		border-radius: 4px;
-		padding: 0 25px;
+		padding-left: 25px;
+		padding-right: 25px;
 		margin-left: 20px;
 	}
+}
+.b-hotels-cards:hover {
+	filter: gray;
+    -webkit-filter: grayscale(1);
 }
 .b-hotels-cards
 {
@@ -420,8 +432,8 @@ nav {
 				width: 100%;
 				height: 100%;
 				z-index: 10;
+				
 			}
-	
 			& i.fas, i.far
 			{
 				color: $icon-color;
@@ -442,7 +454,7 @@ nav {
 				-o-border-image: url(../images/border-cards-top.png) 15 round round;
 				border-image: url(../images/border-cards-top.png) 15 round round;
 				border-top: 15px solid;
-
+				
 						p
 						{
 							font-weight: 500;
