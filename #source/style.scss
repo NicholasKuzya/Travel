@@ -357,7 +357,8 @@ nav {
 	}
 	.select {
 		width: 270px;
-		height: 40px;
+		padding-top: 11px;
+		padding-bottom: 11px;
 		padding-left: 15px;
 		padding-right: 10px;
 		border: none;
@@ -372,8 +373,9 @@ nav {
 	}
 	input {
 		padding-left: 15px;
-		height: 40px;
 		width: 220px;
+		padding-bottom: 11px;
+		padding-top: 11px;
 		border: none;
 		border-radius: 7px;
 		margin-left: 5px;
@@ -389,7 +391,8 @@ nav {
 		text-align: center;
 		line-height: 24px;
 		border: none;
-		height: 40px;
+		padding-bottom: 11px;
+		padding-top: 11px;
 		// background: linear-gradient(#FFFFFF, #F9F9F9, #EEEFF5);
 		background: linear-gradient(180deg, #ffffff 0%, #f9f9f9 47.4%, #eeeff5 100%);
 		box-shadow: 0px 9px 15px rgba(0, 0, 0, 0.1);
@@ -439,7 +442,6 @@ nav {
 				-o-border-image: url(../images/border-cards-top.png) 15 round round;
 				border-image: url(../images/border-cards-top.png) 15 round round;
 				border-top: 15px solid;
-				margin-bottom: 10px;
 
 						p
 						{
@@ -449,13 +451,13 @@ nav {
 							text-align: left;
 							margin-left: 20px;
 							font-style: normal;
+							margin-top: 10px;
 						}
 			}
 			ul
 			{	
 
 					margin-left: -10px;
-					margin-top: -10px;
 				& li
 				{
 					list-style-type: none;
