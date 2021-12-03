@@ -337,6 +337,17 @@ nav .b-social .b-social-network .b-social-pages:hover {
   border-image: url(../images/border-cards.png) 15 round round;
   position: relative;
 }
+.b-hotels-cards__sight .b-hotels-cards-footer {
+  margin-top: 0 !important;
+}
+.b-hotels-cards__sight .b-hotels-cards-footer .b-sight-text {
+  margin-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 30px;
+}
+.b-hotels-cards__sight .b-hotels-cards-footer p {
+  margin-left: 20px;
+}
 .b-hotels-cards .b-cards-link {
   position: absolute;
   width: 100%;
@@ -385,17 +396,20 @@ nav .b-social .b-social-network .b-social-pages:hover {
   border-image: url(../images/border-cards-top.png) 15 round round;
   border-bottom: 15px solid;
   margin-top: 35px;
+  font-size: 14px;
+  font-weight: 400;
+  color: #2F383E;
+}
+.b-hotels-cards .b-hotels-cards-footer a {
+  color: #F99C45;
+  font-size: 14px;
+  font-weight: 400;
 }
 .b-hotels-cards .b-hotels-cards-footer p {
   margin-left: 20px;
 }
 .b-hotels-cards .b-hotels-cards-footer .b-hotels-about {
   margin-left: 20px;
-}
-.b-hotels-cards .b-hotels-cards-footer .b-hotels-about a {
-  color: #F99C45;
-  font-size: 14px;
-  font-weight: 400;
 }
 .b-hotels-cards .b-col {
   margin-top: -20px;
@@ -428,7 +442,7 @@ nav .b-social .b-social-network .b-social-pages:hover {
 }
 
 footer {
-  margin-top: 130px;
+  margin-top: 135px;
   height: 90px;
   background-image: url(../images/bg-footer.png);
 }
