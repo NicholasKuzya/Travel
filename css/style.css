@@ -322,7 +322,7 @@ nav .b-social .b-social-network .b-social-pages:hover {
   margin-left: 20px;
 }
 
-.b-hotels-cards:hover {
+.b-hotels-cards:hover img {
   filter: gray;
   -webkit-filter: grayscale(1);
 }
