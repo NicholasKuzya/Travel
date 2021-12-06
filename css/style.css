@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@400;500;600;700;800&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
 @font-face {
@@ -158,6 +159,10 @@ body header {
   font-weight: 500;
   -webkit-filter: drop-shadow(0px 5px 15px rgba(0, 0, 0, 0.1));
           filter: drop-shadow(0px 5px 15px rgba(0, 0, 0, 0.1));
+}
+
+nav ol li:first-child:before {
+  display: none;
 }
 
 .b-header {
@@ -467,5 +472,78 @@ footer .b-footer-info-text {
   color: #fff;
   font-family: "Roboto", sans-serif;
   font-style: normal;
+  font-weight: 500;
+}
+
+main.__visa div.text {
+  margin-top: 40px;
+}
+main.__visa div.text p {
+  color: #2F383E;
+  font-family: Gilroy;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 150%;
+}
+main.__visa h2 {
+  font-family: Gilroy;
+  font-weight: 800;
+  font-size: 25px;
+}
+main.__visa h3 {
+  font-family: Gilroy;
+  font-size: 18px;
+  font-weight: 500;
+}
+main.__visa ul {
+  margin-top: 30px;
+}
+main.__visa ul li {
+  display: inline-block;
+  margin-left: 80px;
+  font-style: normal;
+  font-weight: 500;
+  position: relative;
+  font-size: 18px;
+  width: 300px;
+}
+main.__visa ul li:before {
+  content: "";
+  position: absolute;
+  width: 5px;
+  height: 5px;
+  background-color: #F99C45;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  top: 35%;
+  left: -10px;
+}
+main.__visa ul p {
+  font-weight: 400;
+  font-size: 14px;
+  color: #515558;
+  margin-top: 15px;
+  margin-bottom: 30px;
+}
+main.__visa .b-text p {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 27px;
+}
+main.__visa .b-text p span {
+  color: #F99C45;
+}
+main.__visa ol {
+  counter-reset: item;
+  list-style-type: none;
+}
+main.__visa ol li:before {
+  content: counter(item) ") ";
+  /* Добавляем к числам скобку */
+  counter-increment: item;
+  /* Задаём имя счетчика */
+  color: #F99C45;
+  font-size: 18px;
   font-weight: 500;
 }

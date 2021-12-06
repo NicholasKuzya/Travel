@@ -250,7 +250,13 @@ body {
 		filter: drop-shadow(0px 5px 15px rgba(0, 0, 0, 0.1));
 	}
 }
-
+nav {
+	ol {
+		li:first-child:before {
+			display: none;
+		}
+	}
+}
 //------------- HOTELS -------------//
 
 .b-header {
@@ -594,3 +600,85 @@ footer
 		font-weight: 500;
 	}
 }
+
+
+
+main.__visa
+{
+	div.text {
+		margin-top: 40px;
+		p {
+			color: #2F383E;
+			font-family: Gilroy;
+			font-style: normal;
+			font-weight: 500;
+			font-size: 18px;
+			line-height: 150%;
+		}
+	}
+	
+	h2 {
+		font-family: Gilroy;
+		font-weight: 800;
+		font-size: 25px;
+	}
+	h3 {
+		font-family: Gilroy;
+		font-size: 18px;
+		font-weight: 500;
+	}
+	ul {
+		margin-top: 30px;
+		li {
+			display: inline-block;
+			margin-left: 80px;
+			font-style: normal;
+			font-weight: 500;
+			position: relative;
+			font-size: 18px;
+			width: 300px;
+				
+		}
+		li:before {
+					content: '';
+					position: absolute;
+					width: 5px;
+					height: 5px;
+					background-color: $icon-color;
+					transform: rotate(45deg);
+					top: 35%;
+					left: -10px;
+				}
+		p {
+			font-weight: 400;
+			font-size: 14px;
+			color: #515558;
+			margin-top: 15px;
+			margin-bottom: 30px;
+		}
+	}
+	.b-text {
+		p {
+			font-weight: 700;
+			font-size: 18px;
+			line-height: 27px;
+
+				span {
+					color: $icon-color;
+				}
+		}
+	}
+	ol {
+		counter-reset: item;
+		list-style-type: none;
+
+		li:before {
+			content: counter(item) ') '; /* Добавляем к числам скобку */
+			counter-increment: item; /* Задаём имя счетчика */
+			color: $icon-color;
+			font-size: 18px;
+			font-weight: 500;
+		  }
+	}
+}
+
