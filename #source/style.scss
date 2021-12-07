@@ -605,8 +605,7 @@ footer
 
 main.__visa
 {
-	div.text {
-		margin-top: 40px;
+	
 		p {
 			color: #2F383E;
 			font-family: Gilroy;
@@ -614,13 +613,15 @@ main.__visa
 			font-weight: 500;
 			font-size: 18px;
 			line-height: 150%;
+			margin-top: 15px;
 		}
-	}
+	
 	
 	h2 {
 		font-family: Gilroy;
 		font-weight: 800;
 		font-size: 25px;
+		margin-top: 30px;
 	}
 	h3 {
 		font-family: Gilroy;
@@ -628,15 +629,15 @@ main.__visa
 		font-weight: 500;
 	}
 	ul {
+		padding-left: 1rem;
 		margin-top: 30px;
 		li {
 			display: inline-block;
-			margin-left: 80px;
 			font-style: normal;
 			font-weight: 500;
 			position: relative;
 			font-size: 18px;
-			width: 300px;
+			width: 330px;
 				
 		}
 		li:before {
@@ -649,16 +650,17 @@ main.__visa
 					top: 35%;
 					left: -10px;
 				}
-		p {
+		
+	}
+	h4 {
 			font-weight: 400;
 			font-size: 14px;
 			color: #515558;
 			margin-top: 15px;
 			margin-bottom: 30px;
 		}
-	}
-	.b-text {
-		p {
+	
+		h5 {
 			font-weight: 700;
 			font-size: 18px;
 			line-height: 27px;
@@ -667,10 +669,11 @@ main.__visa
 					color: $icon-color;
 				}
 		}
-	}
+	
 	ol {
 		counter-reset: item;
 		list-style-type: none;
+		padding-left: 0;
 
 		li:before {
 			content: counter(item) ') '; /* Добавляем к числам скобку */

@@ -475,21 +475,20 @@ footer .b-footer-info-text {
   font-weight: 500;
 }
 
-main.__visa div.text {
-  margin-top: 40px;
-}
-main.__visa div.text p {
+main.__visa p {
   color: #2F383E;
   font-family: Gilroy;
   font-style: normal;
   font-weight: 500;
   font-size: 18px;
   line-height: 150%;
+  margin-top: 15px;
 }
 main.__visa h2 {
   font-family: Gilroy;
   font-weight: 800;
   font-size: 25px;
+  margin-top: 30px;
 }
 main.__visa h3 {
   font-family: Gilroy;
@@ -497,16 +496,16 @@ main.__visa h3 {
   font-weight: 500;
 }
 main.__visa ul {
+  padding-left: 1rem;
   margin-top: 30px;
 }
 main.__visa ul li {
   display: inline-block;
-  margin-left: 80px;
   font-style: normal;
   font-weight: 500;
   position: relative;
   font-size: 18px;
-  width: 300px;
+  width: 330px;
 }
 main.__visa ul li:before {
   content: "";
@@ -519,24 +518,25 @@ main.__visa ul li:before {
   top: 35%;
   left: -10px;
 }
-main.__visa ul p {
+main.__visa h4 {
   font-weight: 400;
   font-size: 14px;
   color: #515558;
   margin-top: 15px;
   margin-bottom: 30px;
 }
-main.__visa .b-text p {
+main.__visa h5 {
   font-weight: 700;
   font-size: 18px;
   line-height: 27px;
 }
-main.__visa .b-text p span {
+main.__visa h5 span {
   color: #F99C45;
 }
 main.__visa ol {
   counter-reset: item;
   list-style-type: none;
+  padding-left: 0;
 }
 main.__visa ol li:before {
   content: counter(item) ") ";
