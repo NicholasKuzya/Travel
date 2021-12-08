@@ -147,6 +147,43 @@
   font-weight: 900;
   font-style: normal;
 }
+p {
+  color: #2f383e;
+  font-family: Gilroy;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 150%;
+  margin-top: 15px;
+}
+
+h2 {
+  font-family: Gilroy;
+  font-weight: 800;
+  font-size: 25px;
+  margin-top: 30px;
+}
+
+h3 {
+  font-family: Gilroy;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+h4 {
+  font-weight: 400;
+  font-size: 14px;
+  color: #515558;
+  margin-top: 15px;
+  margin-bottom: 30px;
+}
+
+h5 {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 27px;
+}
+
 .b-active {
   color: #e3c5aa !important;
 }
@@ -185,11 +222,11 @@ nav .b-navbar-nav .b-nav-item {
 }
 nav .b-navbar-nav .b-nav-item .b-nav-link {
   font-weight: 500;
-  color: #2F383E;
+  color: #2f383e;
   font-size: 18px;
 }
 nav .b-navbar-nav .b-nav-item .b-nav-link:hover {
-  color: #F99C45;
+  color: #f99c45;
 }
 nav .b-social {
   margin-left: 55px;
@@ -205,7 +242,7 @@ nav .b-social .b-social-network .b-social-pages {
   color: #e3c5aa;
 }
 nav .b-social .b-social-network .b-social-pages:hover {
-  color: #F99C45;
+  color: #f99c45;
 }
 
 .b-banner {
@@ -221,7 +258,7 @@ nav .b-social .b-social-network .b-social-pages:hover {
   font-size: 18px;
 }
 .b-banner .b-title nav .b-breadcrumb .active {
-  color: #F99C45;
+  color: #f99c45;
 }
 .b-banner .b-title nav .b-breadcrumb-item::before {
   color: #e3c5aa;
@@ -333,8 +370,8 @@ nav .b-social .b-social-network .b-social-pages:hover {
 }
 
 .b-hotels-cards {
-  background: radial-gradient(67.04% 67.04% at 52.62% 61.84%, #FBF3D7 54.35%, #F6EBCC 100%), -webkit-gradient(linear, left bottom, left top, from(#C4C4C4), to(#C4C4C4));
-  background: radial-gradient(67.04% 67.04% at 52.62% 61.84%, #FBF3D7 54.35%, #F6EBCC 100%), linear-gradient(0deg, #C4C4C4, #C4C4C4);
+  background: radial-gradient(67.04% 67.04% at 52.62% 61.84%, #fbf3d7 54.35%, #f6ebcc 100%), -webkit-gradient(linear, left bottom, left top, from(#c4c4c4), to(#c4c4c4));
+  background: radial-gradient(67.04% 67.04% at 52.62% 61.84%, #fbf3d7 54.35%, #f6ebcc 100%), linear-gradient(0deg, #c4c4c4, #c4c4c4);
   margin-top: 35px;
   border-left: 15px solid;
   border-right: 15px solid;
@@ -359,8 +396,9 @@ nav .b-social .b-social-network .b-social-pages:hover {
   height: 100%;
   z-index: 10;
 }
-.b-hotels-cards i.fas, .b-hotels-cards i.far {
-  color: #F99C45;
+.b-hotels-cards i.fas,
+.b-hotels-cards i.far {
+  color: #f99c45;
 }
 .b-hotels-cards i.fa-plane {
   -webkit-transform: rotate(-90deg);
@@ -378,7 +416,7 @@ nav .b-social .b-social-network .b-social-pages:hover {
 .b-hotels-cards .b-hotels-cards-header p {
   font-weight: 500;
   font-size: 18px;
-  color: #2F383E;
+  color: #2f383e;
   text-align: left;
   margin-left: 20px;
   font-style: normal;
@@ -403,10 +441,10 @@ nav .b-social .b-social-network .b-social-pages:hover {
   margin-top: 35px;
   font-size: 14px;
   font-weight: 400;
-  color: #2F383E;
+  color: #2f383e;
 }
 .b-hotels-cards .b-hotels-cards-footer a {
-  color: #F99C45;
+  color: #f99c45;
   font-size: 14px;
   font-weight: 400;
 }
@@ -421,7 +459,7 @@ nav .b-social .b-social-network .b-social-pages:hover {
 }
 
 .b-page-link {
-  color: #2F383E;
+  color: #2f383e;
 }
 
 .b-page-link {
@@ -429,7 +467,8 @@ nav .b-social .b-social-network .b-social-pages:hover {
   border: none;
 }
 
-.b-page-item.first, .b-page-item.last {
+.b-page-item.first,
+.b-page-item.last {
   background-color: inherit;
 }
 
@@ -438,7 +477,7 @@ nav .b-social .b-social-network .b-social-pages:hover {
   margin: 0 5px;
 }
 .b-page-item i.fas {
-  color: #F99C45;
+  color: #f99c45;
 }
 
 .b-pagination {
@@ -475,26 +514,6 @@ footer .b-footer-info-text {
   font-weight: 500;
 }
 
-main.__visa p {
-  color: #2F383E;
-  font-family: Gilroy;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 18px;
-  line-height: 150%;
-  margin-top: 15px;
-}
-main.__visa h2 {
-  font-family: Gilroy;
-  font-weight: 800;
-  font-size: 25px;
-  margin-top: 30px;
-}
-main.__visa h3 {
-  font-family: Gilroy;
-  font-size: 18px;
-  font-weight: 500;
-}
 main.__visa ul {
   padding-left: 1rem;
   margin-top: 30px;
@@ -512,18 +531,11 @@ main.__visa ul li:before {
   position: absolute;
   width: 5px;
   height: 5px;
-  background-color: #F99C45;
+  background-color: #f99c45;
   -webkit-transform: rotate(45deg);
           transform: rotate(45deg);
   top: 35%;
   left: -10px;
-}
-main.__visa h4 {
-  font-weight: 400;
-  font-size: 14px;
-  color: #515558;
-  margin-top: 15px;
-  margin-bottom: 30px;
 }
 main.__visa h5 {
   font-weight: 700;
@@ -531,7 +543,7 @@ main.__visa h5 {
   line-height: 27px;
 }
 main.__visa h5 span {
-  color: #F99C45;
+  color: #f99c45;
 }
 main.__visa ol {
   counter-reset: item;
@@ -543,7 +555,33 @@ main.__visa ol li:before {
   /* Добавляем к числам скобку */
   counter-increment: item;
   /* Задаём имя счетчика */
-  color: #F99C45;
+  color: #f99c45;
   font-size: 18px;
   font-weight: 500;
+}
+
+.b-gallery {
+  margin-top: 30px;
+}
+.b-gallery .b-gallery-loc i.fas,
+.b-gallery .b-gallery-loc i.far {
+  color: #f99c45;
+}
+.b-gallery .b-gallery-loc span {
+  margin-right: 10px;
+}
+.b-gallery .b-gallery-loc a {
+  color: #e3c5aa;
+  font-size: 18px;
+  font-weight: 500;
+}
+.b-gallery hr {
+  width: 960px;
+  color: #e3c5aa;
+  height: 2px;
+}
+
+.b-gallery-cont {
+  margin-top: 55px;
+  margin-bottom: 40px;
 }
