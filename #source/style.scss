@@ -268,7 +268,7 @@ $icon-color: #f99c45;
 $bg-footer-color: #39342c;
 $breadcrumb-divider: quote("»");
 $breadcrumb-divider-color: $primary-color;
-
+$input-colors: #FFFBF8;
 .b-active {
 	color: $primary-color !important;
 }
@@ -673,4 +673,61 @@ main.__visa {
 .b-gallery-cont {
 	margin-top: 55px;
 	margin-bottom: 40px;
+}
+.b-banner-head {
+	.b-banner-forms {
+
+		.b-forms-inputs {
+			input {
+				background-color: $input-colors;
+				border: none;
+				margin-bottom: 10px;
+				box-shadow: inset 0px 3px 6px rgba(0, 0, 0, 0.06);
+				border-radius: 7px;
+				width: 300px;
+				height: 50px;
+				&::placeholder {
+					padding: 10px;
+					color: $primary-color;
+					padding-left: 25px;
+					padding-right: 190px;
+			}
+			}
+			textarea {
+				background-color: $input-colors;
+				border: none;
+				box-shadow: inset 0px 3px 6px rgba(0, 0, 0, 0.06);
+				border-radius: 7px;
+				width: 300px;
+				height: 170px;
+				&::placeholder {
+					color: $primary-color;
+					padding-left: 25px;
+				}
+			}
+			
+			
+			
+		}
+		.b-banner-title {
+			h2 {
+				font-weight: 800;
+				font-size: 20px;
+				margin-top: 0;
+			}
+		}
+	}
+	.b-forms-btn {
+		margin-top: 40px;
+				.b-forms-link {
+					color: #fff;
+					font-weight: 800;
+					font-size: 20px;
+					background-color: $icon-color;
+					text-decoration: none;
+					padding: 17px 65px;
+					display: inline-block;
+					
+				}
+			}
 }
