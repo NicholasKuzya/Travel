@@ -598,8 +598,7 @@ footer {
 		font-weight: 500;
 	}
 }
-
-main.__visa {
+.text-spisok {
 	ul {
 		padding-left: 1rem;
 		margin-top: 30px;
@@ -622,7 +621,8 @@ main.__visa {
 			left: -10px;
 		}
 	}
-
+}
+main.__visa{
 	h5 {
 		font-weight: 700;
 		font-size: 18px;
@@ -675,6 +675,7 @@ main.__visa {
 	margin-bottom: 40px;
 }
 .b-banner-head {
+	margin-top: 30px;
 	.b-banner-forms {
 
 		.b-forms-inputs {
@@ -699,7 +700,8 @@ main.__visa {
 				box-shadow: inset 0px 3px 6px rgba(0, 0, 0, 0.06);
 				border-radius: 7px;
 				width: 300px;
-				height: 170px;
+				height: 150px;
+				resize: none;
 				&::placeholder {
 					color: $primary-color;
 					padding-left: 25px;
@@ -715,19 +717,36 @@ main.__visa {
 				font-size: 20px;
 				margin-top: 0;
 			}
+			hr {
+				color: $primary-color;
+				height: 2px;
+			}
 		}
 	}
 	.b-forms-btn {
-		margin-top: 40px;
+		margin-top: 35px;
 				.b-forms-link {
 					color: #fff;
 					font-weight: 800;
 					font-size: 20px;
+					background-image: url(../images/bg-button.png);
 					background-color: $icon-color;
+					background-position: center;
+					background-size: 320px 120px;
 					text-decoration: none;
-					padding: 17px 65px;
+					padding: 13px 65px;
 					display: inline-block;
+					box-shadow: 0px 9px 15px rgba(0, 0, 0, 0.1);
+					border-radius: 4px;
+					opacity: .9;
 					
 				}
 			}
+}
+main.__about {
+	ul {
+		li {
+			width: 600px;
+		}
+	}
 }

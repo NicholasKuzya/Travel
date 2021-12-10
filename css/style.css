@@ -514,11 +514,11 @@ footer .b-footer-info-text {
   font-weight: 500;
 }
 
-main.__visa ul {
+.text-spisok ul {
   padding-left: 1rem;
   margin-top: 30px;
 }
-main.__visa ul li {
+.text-spisok ul li {
   display: inline-block;
   font-style: normal;
   font-weight: 500;
@@ -526,7 +526,7 @@ main.__visa ul li {
   font-size: 18px;
   width: 330px;
 }
-main.__visa ul li:before {
+.text-spisok ul li:before {
   content: "";
   position: absolute;
   width: 5px;
@@ -537,6 +537,7 @@ main.__visa ul li:before {
   top: 35%;
   left: -10px;
 }
+
 main.__visa h5 {
   font-weight: 700;
   font-size: 18px;
@@ -586,6 +587,9 @@ main.__visa ol li:before {
   margin-bottom: 40px;
 }
 
+.b-banner-head {
+  margin-top: 30px;
+}
 .b-banner-head .b-banner-forms .b-forms-inputs input {
   background-color: #FFFBF8;
   border: none;
@@ -633,7 +637,8 @@ main.__visa ol li:before {
           box-shadow: inset 0px 3px 6px rgba(0, 0, 0, 0.06);
   border-radius: 7px;
   width: 300px;
-  height: 170px;
+  height: 150px;
+  resize: none;
 }
 .b-banner-head .b-banner-forms .b-forms-inputs textarea::-webkit-input-placeholder {
   color: #e3c5aa;
@@ -660,15 +665,30 @@ main.__visa ol li:before {
   font-size: 20px;
   margin-top: 0;
 }
+.b-banner-head .b-banner-forms .b-banner-title hr {
+  color: #e3c5aa;
+  height: 2px;
+}
 .b-banner-head .b-forms-btn {
-  margin-top: 40px;
+  margin-top: 35px;
 }
 .b-banner-head .b-forms-btn .b-forms-link {
   color: #fff;
   font-weight: 800;
   font-size: 20px;
+  background-image: url(../images/bg-button.png);
   background-color: #f99c45;
+  background-position: center;
+  background-size: 320px 120px;
   text-decoration: none;
-  padding: 17px 65px;
+  padding: 13px 65px;
   display: inline-block;
+  -webkit-box-shadow: 0px 9px 15px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 9px 15px rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+  opacity: 0.9;
+}
+
+main.__about ul li {
+  width: 600px;
 }
