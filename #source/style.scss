@@ -425,6 +425,43 @@ nav {
 	& input::placeholder {
 		color: $primary-color;
 	}
+	input[type="date"] {
+		background-image: url(../images/);
+	}
+	input[type="date"]:before {
+		color: $primary-color;
+		content: attr(placeholder) !important;
+	  }
+	  input[type=date]::-webkit-datetime-edit-text {
+		-webkit-appearance: none;
+		display: none;
+	}
+	input[type=date]::-webkit-datetime-edit-month-field{
+		-webkit-appearance: none;
+		display: none;
+	}
+	input[type=date]::-webkit-datetime-edit-day-field {
+		-webkit-appearance: none;
+		display: none;
+	}
+	input[type=date]::-webkit-datetime-edit-year-field {
+		-webkit-appearance: none;
+		display: none;
+	}
+	input::-webkit-calendar-picker-indicator{
+		opacity: 0;
+		width: 60px;
+		z-index: 1;
+	}
+	#calendarIcon {
+		position: relative;
+		z-index: inherit;
+		left: -25px;
+		top: 1px;
+		color: $icon-color;
+		cursor: pointer;
+		width: 0;
+	  }
 	button {
 		color: #f99c45;
 		font-size: 20px;
@@ -747,6 +784,126 @@ main.__about {
 	ul {
 		li {
 			width: 600px;
+		}
+	}
+}
+
+
+.b-tour-cards {
+	margin-top: 35px;
+	-moz-border-image: url(../images/border-cards-top.png) 15 round round;
+		-webkit-border-image: url(../images/border-cards-top.png) 15 round round;
+		-o-border-image: url(../images/border-cards-top.png) 15 round round;
+		border-image: url(../images/border-cards-top.png) 15 round round;
+		border-top: 15px solid;
+		border-bottom: 15px solid;
+	background: radial-gradient(67.04% 67.04% at 52.62% 61.84%, #fbf3d7 54.35%, #f6ebcc 100%),
+		linear-gradient(0deg, #c4c4c4, #c4c4c4);
+		.b-card-media {
+			img {
+				margin: 0;
+			}
+			border-left: 15px solid;
+		-moz-border-image: url(../images/border-cards.png) 15 round round;
+		-webkit-border-image: url(../images/border-cards.png) 15 round round;
+		-o-border-image: url(../images/border-cards.png) 15 round round;
+		border-image: url(../images/border-cards.png) 15 round round;
+		padding: 40px 40px;
+		}
+	.b-card-text {
+		padding-top: 40px;
+		border-right: 15px solid;
+		-moz-border-image: url(../images/border-cards.png) 15 round round;
+		-webkit-border-image: url(../images/border-cards.png) 15 round round;
+		-o-border-image: url(../images/border-cards.png) 15 round round;
+		border-image: url(../images/border-cards.png) 15 round round;
+		h2 {
+			margin: 0;
+			span {
+				color: $icon-color;
+			}
+		}
+		ul {
+			margin-top: 20px;
+			list-style-type: none;
+			margin-left: -30px;
+			li {
+				margin-bottom: 10px;
+				span {
+					margin-left: 10px;
+				}
+				i {
+					color: $icon-color;
+					margin-right: 10px;
+				}
+				.fa-moon {
+					margin-left: 10px;
+				}
+			}
+		}
+		.b-forms-btn {
+			.b-forms-link {
+				color: #fff;
+				font-weight: 800;
+				font-size: 20px;
+				background-image: url(../images/bg-button.png);
+				background-color: $icon-color;
+				background-position: center;
+				background-size: 320px 120px;
+				text-decoration: none;
+				padding-top: 11px;
+				padding-bottom: 11px;
+				padding-left: 25px;
+				padding-right: 25px;
+				display: inline-block;
+				box-shadow: 0px 9px 15px rgba(0, 0, 0, 0.1);
+				border-radius: 4px;
+				opacity: .9;
+			}
+		}
+		button {
+			color: #f99c45;
+			font-size: 20px;
+			font-weight: 800;
+			text-align: center;
+			line-height: 24px;
+			border: none;
+			padding-bottom: 14px;
+			padding-top: 14px;
+			// background: linear-gradient(#FFFFFF, #F9F9F9, #EEEFF5);
+			background: linear-gradient(180deg, #ffffff 0%, #f9f9f9 47.4%, #eeeff5 100%);
+			box-shadow: 0px 9px 15px rgba(0, 0, 0, 0.1);
+			border-radius: 4px;
+			padding-left: 50px;
+			padding-right: 50px;
+			margin-left: 20px;
+		}
+	}
+}
+.b-tour-content {
+	h3 {
+		font-weight: 600;
+		font-size: 35px;
+		margin-top: 40px;
+	}
+	img {
+		margin-top: 40px;
+		margin-bottom: 20px;
+	}
+}
+.sidebar {
+	h2 {
+		font-size: 20px;
+	}
+	hr {
+		height: 2px;
+		color: $primary-color;
+	}
+	ul {
+		li {
+			a {
+				color: #515558;
+			}
 		}
 	}
 }

@@ -345,6 +345,43 @@ nav .b-social .b-social-network .b-social-pages:hover {
 .b-banner input::placeholder {
   color: #e3c5aa;
 }
+.b-banner input[type=date] {
+  background-image: url(../images/);
+}
+.b-banner input[type=date]:before {
+  color: #e3c5aa;
+  content: attr(placeholder) !important;
+}
+.b-banner input[type=date]::-webkit-datetime-edit-text {
+  -webkit-appearance: none;
+  display: none;
+}
+.b-banner input[type=date]::-webkit-datetime-edit-month-field {
+  -webkit-appearance: none;
+  display: none;
+}
+.b-banner input[type=date]::-webkit-datetime-edit-day-field {
+  -webkit-appearance: none;
+  display: none;
+}
+.b-banner input[type=date]::-webkit-datetime-edit-year-field {
+  -webkit-appearance: none;
+  display: none;
+}
+.b-banner input::-webkit-calendar-picker-indicator {
+  opacity: 0;
+  width: 60px;
+  z-index: 1;
+}
+.b-banner #calendarIcon {
+  position: relative;
+  z-index: inherit;
+  left: -25px;
+  top: 1px;
+  color: #f99c45;
+  cursor: pointer;
+  width: 0;
+}
 .b-banner button {
   color: #f99c45;
   font-size: 20px;
@@ -691,4 +728,111 @@ main.__visa ol li:before {
 
 main.__about ul li {
   width: 600px;
+}
+
+.b-tour-cards {
+  margin-top: 35px;
+  -o-border-image: url(../images/border-cards-top.png) 15 round round;
+  border-image: url(../images/border-cards-top.png) 15 round round;
+  border-top: 15px solid;
+  border-bottom: 15px solid;
+  background: radial-gradient(67.04% 67.04% at 52.62% 61.84%, #fbf3d7 54.35%, #f6ebcc 100%), -webkit-gradient(linear, left bottom, left top, from(#c4c4c4), to(#c4c4c4));
+  background: radial-gradient(67.04% 67.04% at 52.62% 61.84%, #fbf3d7 54.35%, #f6ebcc 100%), linear-gradient(0deg, #c4c4c4, #c4c4c4);
+}
+.b-tour-cards .b-card-media {
+  border-left: 15px solid;
+  -o-border-image: url(../images/border-cards.png) 15 round round;
+  border-image: url(../images/border-cards.png) 15 round round;
+  padding: 40px 40px;
+}
+.b-tour-cards .b-card-media img {
+  margin: 0;
+}
+.b-tour-cards .b-card-text {
+  padding-top: 40px;
+  border-right: 15px solid;
+  -o-border-image: url(../images/border-cards.png) 15 round round;
+  border-image: url(../images/border-cards.png) 15 round round;
+}
+.b-tour-cards .b-card-text h2 {
+  margin: 0;
+}
+.b-tour-cards .b-card-text h2 span {
+  color: #f99c45;
+}
+.b-tour-cards .b-card-text ul {
+  margin-top: 20px;
+  list-style-type: none;
+  margin-left: -30px;
+}
+.b-tour-cards .b-card-text ul li {
+  margin-bottom: 10px;
+}
+.b-tour-cards .b-card-text ul li span {
+  margin-left: 10px;
+}
+.b-tour-cards .b-card-text ul li i {
+  color: #f99c45;
+  margin-right: 10px;
+}
+.b-tour-cards .b-card-text ul li .fa-moon {
+  margin-left: 10px;
+}
+.b-tour-cards .b-card-text .b-forms-btn .b-forms-link {
+  color: #fff;
+  font-weight: 800;
+  font-size: 20px;
+  background-image: url(../images/bg-button.png);
+  background-color: #f99c45;
+  background-position: center;
+  background-size: 320px 120px;
+  text-decoration: none;
+  padding-top: 11px;
+  padding-bottom: 11px;
+  padding-left: 25px;
+  padding-right: 25px;
+  display: inline-block;
+  -webkit-box-shadow: 0px 9px 15px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 9px 15px rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+  opacity: 0.9;
+}
+.b-tour-cards .b-card-text button {
+  color: #f99c45;
+  font-size: 20px;
+  font-weight: 800;
+  text-align: center;
+  line-height: 24px;
+  border: none;
+  padding-bottom: 14px;
+  padding-top: 14px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#ffffff), color-stop(47.4%, #f9f9f9), to(#eeeff5));
+  background: linear-gradient(180deg, #ffffff 0%, #f9f9f9 47.4%, #eeeff5 100%);
+  -webkit-box-shadow: 0px 9px 15px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 9px 15px rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+  padding-left: 50px;
+  padding-right: 50px;
+  margin-left: 20px;
+}
+
+.b-tour-content h3 {
+  font-weight: 600;
+  font-size: 35px;
+  margin-top: 40px;
+}
+.b-tour-content img {
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+
+.sidebar h2 {
+  font-size: 20px;
+}
+.sidebar hr {
+  height: 2px;
+  color: #e3c5aa;
+}
+.sidebar ul li a {
+  color: #515558;
 }
