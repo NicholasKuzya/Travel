@@ -9,3 +9,17 @@ $(document).ready(function() {
        }
     });
  });
+ $(document).ready(function(){
+  $(".owl-carousel").owlCarousel({
+    center: true, 
+    autoplay:false, 
+    autoplayTimeout:5000,
+    autoplayHoverPause:false,
+    stagePadding: 150, 
+    items:1,           
+    loop:true,     
+    margin:0,
+    margin: 90,
+    nav: true,
+  })
+});

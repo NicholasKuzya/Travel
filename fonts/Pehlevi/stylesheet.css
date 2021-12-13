@@ -1,0 +1,12 @@
+@font-face {
+    font-family: 'Pehlevi';
+    src: url('Pehlevi-Regular.eot');
+    src: local('Pehlevi Regular'), local('Pehlevi-Regular'),
+        url('Pehlevi-Regular.eot?#iefix') format('embedded-opentype'),
+        url('Pehlevi-Regular.woff2') format('woff2'),
+        url('Pehlevi-Regular.woff') format('woff'),
+        url('Pehlevi-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+

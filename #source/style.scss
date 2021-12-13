@@ -230,6 +230,21 @@
 	font-weight: 900;
 	font-style: normal;
 }
+@font-face {
+    font-family: 'Pehlevi';
+    src: url('../fonts/Pehlevi/Pehlevi-Regular.eot');
+    src: local('../fonts/Pehlevi/Pehlevi Regular'), local('../fonts/Pehlevi/Pehlevi-Regular'),
+        url('../fonts/Pehlevi/Pehlevi-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Pehlevi/Pehlevi-Regular.woff2') format('woff2'),
+        url('../fonts/Pehlevi/Pehlevi-Regular.woff') format('woff'),
+        url('../fonts/Pehlevi/Pehlevi-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+.notactive {
+	display: none;
+}
+
 p {
 	color: #2f383e;
 	font-family: Gilroy;
@@ -268,7 +283,7 @@ $icon-color: #f99c45;
 $bg-footer-color: #39342c;
 $breadcrumb-divider: quote("»");
 $breadcrumb-divider-color: $primary-color;
-$input-colors: #FFFBF8;
+$input-colors: #fffbf8;
 .b-active {
 	color: $primary-color !important;
 }
@@ -288,6 +303,133 @@ nav {
 		}
 	}
 }
+header.__index {
+	.b-navbar-nav {
+		.b-nav-item {
+			a {
+				color: #fff;
+			}
+		}
+	}
+	nav {
+		.b-social {
+			.b-social-network {
+				.b-social-pages {
+					color: #fff;
+				}
+				.b-social-pages:hover {
+					color: $icon-color;
+				}
+			}
+		}
+	}
+}
+main.__index {
+	.b-banner {
+		margin-top: -115px;
+		padding-top: 250px;
+		padding-bottom: 150px;
+		background-image: url(../images/index-bg.png);
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
+		.b-banner-content {
+			text-align: center;
+			h1 {
+				font-weight: 250;
+				font-size: 45px;
+				letter-spacing: 26%;
+				line-height: 42px;
+				color: #fff;
+				margin-bottom: 30px;
+				span {
+					display: none;
+				}
+			}
+			img {
+				margin-bottom: 30px;
+			}
+			a {
+				display: inline;
+				text-decoration: none;
+				background: linear-gradient(180deg, #ffffff 0%, #f9f9f9 47.4%, #eeeff5 100%);
+				box-shadow: 0px 9px 15px 0px #0000001a;
+				font-weight: 800;
+				font-size: 25px;
+				color: #2f383e;
+				padding: 15px 50px;
+			}
+		}
+	}
+}
+.b-uzb-about {
+	margin-top: 75px;
+	.b-uzb-about-text {
+		text-align: center;
+			h2 {
+				font-family: 'Pehlevi';
+				font-weight: 400;
+				font-size: 30px;
+				line-height: 35%;
+				text-transform: uppercase;
+				color: $icon-color;
+			}
+			h3 {
+				font-weight: 800;
+				font-size: 40px;
+				line-height: 52px;
+				color: #2f383e;
+			}
+	}
+	.b-carousel {
+		margin-top: 30px;
+		position: relative;
+		svg {
+			position: absolute;
+			top: -5px;
+			opacity: 0;
+		}
+		img {
+			width: 1000px;
+			height: 500px;
+		}
+		.owl-item.active {
+			svg {
+				opacity: 1;
+			}
+		}
+		
+	}
+}
+.owl-carousel {
+	.owl-nav {
+		button {
+			
+			width: 55px;
+			height: 55px;
+			border-radius: 50%;
+			position: absolute;
+			margin-top: -282px;
+			
+		}
+		.owl-prev {
+			background: $icon-color url(../images/prev.png) center no-repeat !important;
+			background-size: cover;
+			margin-left: 9%;
+		}
+		.owl-next {
+			background: $icon-color url(../images/next.png) center no-repeat !important;
+			background-size: cover;
+			
+			margin-left: 1275px;
+		}
+		span {
+			display: none;
+		}
+		
+}
+}
+
 //------------- HOTELS -------------//
 
 .b-header {
@@ -431,24 +573,24 @@ nav {
 	input[type="date"]:before {
 		color: $primary-color;
 		content: attr(placeholder) !important;
-	  }
-	  input[type=date]::-webkit-datetime-edit-text {
+	}
+	input[type="date"]::-webkit-datetime-edit-text {
 		-webkit-appearance: none;
 		display: none;
 	}
-	input[type=date]::-webkit-datetime-edit-month-field{
+	input[type="date"]::-webkit-datetime-edit-month-field {
 		-webkit-appearance: none;
 		display: none;
 	}
-	input[type=date]::-webkit-datetime-edit-day-field {
+	input[type="date"]::-webkit-datetime-edit-day-field {
 		-webkit-appearance: none;
 		display: none;
 	}
-	input[type=date]::-webkit-datetime-edit-year-field {
+	input[type="date"]::-webkit-datetime-edit-year-field {
 		-webkit-appearance: none;
 		display: none;
 	}
-	input::-webkit-calendar-picker-indicator{
+	input::-webkit-calendar-picker-indicator {
 		opacity: 0;
 		width: 60px;
 		z-index: 1;
@@ -461,7 +603,7 @@ nav {
 		color: $icon-color;
 		cursor: pointer;
 		width: 0;
-	  }
+	}
 	button {
 		color: #f99c45;
 		font-size: 20px;
@@ -659,7 +801,7 @@ footer {
 		}
 	}
 }
-main.__visa{
+main.__visa {
 	h5 {
 		font-weight: 700;
 		font-size: 18px;
@@ -714,7 +856,6 @@ main.__visa{
 .b-banner-head {
 	margin-top: 30px;
 	.b-banner-forms {
-
 		.b-forms-inputs {
 			input {
 				background-color: $input-colors;
@@ -729,7 +870,7 @@ main.__visa{
 					color: $primary-color;
 					padding-left: 25px;
 					padding-right: 190px;
-			}
+				}
 			}
 			textarea {
 				background-color: $input-colors;
@@ -744,9 +885,6 @@ main.__visa{
 					padding-left: 25px;
 				}
 			}
-			
-			
-			
 		}
 		.b-banner-title {
 			h2 {
@@ -762,23 +900,22 @@ main.__visa{
 	}
 	.b-forms-btn {
 		margin-top: 35px;
-				.b-forms-link {
-					color: #fff;
-					font-weight: 800;
-					font-size: 20px;
-					background-image: url(../images/bg-button.png);
-					background-color: $icon-color;
-					background-position: center;
-					background-size: 320px 120px;
-					text-decoration: none;
-					padding: 13px 65px;
-					display: inline-block;
-					box-shadow: 0px 9px 15px rgba(0, 0, 0, 0.1);
-					border-radius: 4px;
-					opacity: .9;
-					
-				}
-			}
+		.b-forms-link {
+			color: #fff;
+			font-weight: 800;
+			font-size: 20px;
+			background-image: url(../images/bg-button.png);
+			background-color: $icon-color;
+			background-position: center;
+			background-size: 320px 120px;
+			text-decoration: none;
+			padding: 13px 65px;
+			display: inline-block;
+			box-shadow: 0px 9px 15px rgba(0, 0, 0, 0.1);
+			border-radius: 4px;
+			opacity: 0.9;
+		}
+	}
 }
 main.__about {
 	ul {
@@ -788,28 +925,27 @@ main.__about {
 	}
 }
 
-
 .b-tour-cards {
 	margin-top: 35px;
 	-moz-border-image: url(../images/border-cards-top.png) 15 round round;
-		-webkit-border-image: url(../images/border-cards-top.png) 15 round round;
-		-o-border-image: url(../images/border-cards-top.png) 15 round round;
-		border-image: url(../images/border-cards-top.png) 15 round round;
-		border-top: 15px solid;
-		border-bottom: 15px solid;
+	-webkit-border-image: url(../images/border-cards-top.png) 15 round round;
+	-o-border-image: url(../images/border-cards-top.png) 15 round round;
+	border-image: url(../images/border-cards-top.png) 15 round round;
+	border-top: 15px solid;
+	border-bottom: 15px solid;
 	background: radial-gradient(67.04% 67.04% at 52.62% 61.84%, #fbf3d7 54.35%, #f6ebcc 100%),
 		linear-gradient(0deg, #c4c4c4, #c4c4c4);
-		.b-card-media {
-			img {
-				margin: 0;
-			}
-			border-left: 15px solid;
+	.b-card-media {
+		img {
+			margin: 0;
+		}
+		border-left: 15px solid;
 		-moz-border-image: url(../images/border-cards.png) 15 round round;
 		-webkit-border-image: url(../images/border-cards.png) 15 round round;
 		-o-border-image: url(../images/border-cards.png) 15 round round;
 		border-image: url(../images/border-cards.png) 15 round round;
 		padding: 40px 40px;
-		}
+	}
 	.b-card-text {
 		padding-top: 40px;
 		border-right: 15px solid;
@@ -858,7 +994,7 @@ main.__about {
 				display: inline-block;
 				box-shadow: 0px 9px 15px rgba(0, 0, 0, 0.1);
 				border-radius: 4px;
-				opacity: .9;
+				opacity: 0.9;
 			}
 		}
 		button {
