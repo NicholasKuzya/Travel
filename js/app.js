@@ -10,6 +10,20 @@ $(document).ready(function() {
     });
  });
  $(document).ready(function(){
+  $(".owl-carousel-three").owlCarousel({
+    // center: true, 
+    // autoplay:false, 
+    // autoplayTimeout:5000,
+    // autoplayHoverPause:false,
+    // stagePadding: 150, 
+    items:3,           
+    // loop:true,     
+    // margin:0,
+    margin: 30,
+    nav: true,
+  })
+});
+ $(document).ready(function(){
   $(".owl-carousel").owlCarousel({
     center: true, 
     autoplay:false, 
