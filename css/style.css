@@ -262,13 +262,11 @@ main.__index .b-banner .b-banner-content a {
   padding: 15px 50px;
 }
 
-.b-uzb-about {
+.b-subtitle-text {
   margin-top: 75px;
-}
-.b-uzb-about .b-uzb-about-text {
   text-align: center;
 }
-.b-uzb-about .b-uzb-about-text h2 {
+.b-subtitle-text h2 {
   font-family: "Pehlevi";
   font-weight: 400;
   font-size: 30px;
@@ -276,11 +274,15 @@ main.__index .b-banner .b-banner-content a {
   text-transform: uppercase;
   color: #f99c45;
 }
-.b-uzb-about .b-uzb-about-text h3 {
+.b-subtitle-text h3 {
   font-weight: 800;
   font-size: 40px;
   line-height: 52px;
   color: #2f383e;
+}
+
+.b-uzb-about {
+  margin-top: 75px;
 }
 .b-uzb-about .b-carousel {
   margin-top: 30px;
@@ -450,6 +452,82 @@ main.__index .b-banner .b-banner-content a {
   font-size: 14px;
   font-weight: 400;
   color: #fff;
+}
+
+.b-programs {
+  padding-top: 120px;
+}
+
+.b-programs-cards-content {
+  margin-top: 30px;
+  position: relative;
+}
+.b-programs-cards-content .b-bg {
+  background: radial-gradient(67.04% 67.04% at 52.62% 61.84%, #FBF3D7 54.35%, #F6EBCC 100%);
+  position: absolute;
+}
+.b-programs-cards-content .b-media {
+  z-index: 1;
+}
+.b-programs-cards-content h2 {
+  margin-top: 25px;
+}
+.b-programs-cards-content .b-text {
+  z-index: 1;
+  width: 310px;
+  margin-left: 30px;
+}
+.b-programs-cards-content .b-text h3 {
+  color: #515558;
+}
+
+.b-btn-more {
+  margin-top: 50px;
+  text-align: center;
+}
+.b-btn-more .b-btn {
+  border: 1px solid #e3c5aa;
+  padding: 17px 50px;
+  background-color: inherit;
+  color: #e3c5aa;
+  font-weight: 800;
+  font-size: 25px;
+  text-align: center;
+}
+
+.b-services {
+  margin-top: 95px;
+}
+.b-services .b-services-content .b-services-text {
+  margin-top: 65px;
+}
+
+.b-dividors {
+  margin-top: 70px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.b-dividors .b-center {
+  margin: 0 40px;
+}
+.b-dividors .b-dividor {
+  width: 45%;
+  background-color: #e3c5aa;
+  height: 1px;
+}
+
+.b-achiv .b-achiv-content h2 {
+  font-weight: 400;
+  font-size: 110px;
+  text-align: center;
+  font-family: "Pehlevi";
+  color: #f99c45;
+}
+.b-achiv .b-achiv-content h3 {
+  font-size: 25px;
+  font-weight: 800;
+  text-align: center;
 }
 
 .b-header {

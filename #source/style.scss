@@ -362,9 +362,8 @@ main.__index {
 		}
 	}
 }
-.b-uzb-about {
-	margin-top: 75px;
-	.b-uzb-about-text {
+.b-subtitle-text {
+		margin-top: 75px;
 		text-align: center;
 			h2 {
 				font-family: 'Pehlevi';
@@ -381,6 +380,9 @@ main.__index {
 				color: #2f383e;
 			}
 	}
+.b-uzb-about {
+	margin-top: 75px;
+	
 	.b-carousel {
 		margin-top: 30px;
 		position: relative;
@@ -566,6 +568,84 @@ main.__index {
 		}
 	}
 }
+.b-programs {
+	padding-top: 120px;
+}
+.b-programs-cards-content {
+	margin-top: 30px;
+	position: relative;
+	.b-bg {
+		background: radial-gradient(67.04% 67.04% at 52.62% 61.84%, #FBF3D7 54.35%, #F6EBCC 100%);
+		position: absolute;
+	}
+	.b-media {
+		z-index: 1;
+	}
+	h2 {
+		margin-top: 25px;
+	}
+	.b-text {
+		z-index: 1;
+		width: 310px;
+		margin-left: 30px;
+			h3 {
+				color: #515558;
+			}
+	}
+}
+.b-btn-more {
+	margin-top: 50px;
+	text-align: center;
+		.b-btn {
+			border:1px solid $primary-color;
+			padding: 17px 50px;
+			background-color: inherit;
+			color: $primary-color;
+			font-weight: 800;
+			font-size: 25px;
+			text-align: center;
+		}
+}
+
+.b-services {
+	margin-top: 95px;
+
+		.b-services-content {
+			.b-services-text {
+				margin-top: 65px;
+			}
+		}
+		
+}
+.b-dividors {
+	margin-top: 70px;
+	align-items: center;
+	.b-center {
+		margin: 0 40px;
+	}
+	.b-dividor {
+		width: 45%;
+		background-color: $primary-color;
+		height: 1px;
+	}
+}
+.b-achiv {
+	.b-achiv-content {
+		h2 {
+			font-weight: 400;
+			font-size: 110px;
+			text-align: center;
+			font-family: 'Pehlevi';
+			color: $icon-color;
+		}
+		h3 {
+			font-size: 25px;
+			font-weight: 800;
+			text-align: center;
+		}
+	}
+}
+
 //------------- HOTELS -------------//
 
 .b-header {
@@ -861,6 +941,7 @@ nav {
 		margin-top: -20px;
 	}
 }
+
 //------------- HOTELS -------------//
 .b-page-link {
 	color: #2f383e;
