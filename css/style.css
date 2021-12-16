@@ -322,6 +322,94 @@ main.__index .b-banner .b-banner-content a {
   display: none;
 }
 
+.b-dawn-content {
+  background-image: url(../images/bg-in-dawn.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: 22;
+}
+.b-dawn-content .wrapper {
+  max-width: 900px;
+  margin: 0 auto;
+  position: relative;
+  background: -webkit-gradient(linear, left top, left bottom, from(#F9D8B9), color-stop(63.78%, #FBF2E6));
+  background: linear-gradient(180deg, #F9D8B9 0%, #FBF2E6 63.78%);
+}
+.b-dawn-content .b-contacts {
+  list-style-type: none;
+  border: 3px dashed #fff;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 0;
+  padding-right: 80px;
+  padding-left: 25px;
+  margin: 45px 110px 0;
+}
+.b-dawn-content .b-contacts .b-contacts-item:first-child {
+  border-right: 3px dashed #fff;
+  padding-right: 40px;
+  padding-left: 0;
+}
+.b-dawn-content .b-contacts .b-contacts-item {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-left: 40px;
+}
+.b-dawn-content .b-contacts .b-contacts-item i {
+  color: #f99c45;
+}
+.b-dawn-content .b-contacts .b-contacts-item .b-contacts-text {
+  margin-left: 20px;
+  color: #515558;
+}
+.b-dawn-content .b-contacts .b-contacts-item .b-contacts-text p {
+  margin: 0;
+}
+.b-dawn-content .b-contacts .b-contacts-item .b-contacts-text .b-contacts-link {
+  text-decoration: none;
+  color: #2F383E;
+  font-weight: 800;
+  font-size: 25px;
+}
+.b-dawn-content .__cont {
+  margin: 55px 145px 0;
+}
+.b-dawn-content .__cont input {
+  width: 270px;
+}
+.b-dawn-content .__cont input:first-child {
+  margin-right: 45px;
+}
+.b-dawn-content .__cont input:first-child::-webkit-input-placeholder {
+  padding-right: 160px;
+}
+.b-dawn-content .__cont input:first-child::-moz-placeholder {
+  padding-right: 160px;
+}
+.b-dawn-content .__cont input:first-child:-ms-input-placeholder {
+  padding-right: 160px;
+}
+.b-dawn-content .__cont input:first-child::-ms-input-placeholder {
+  padding-right: 160px;
+}
+.b-dawn-content .__cont input:first-child::placeholder {
+  padding-right: 160px;
+}
+.b-dawn-content .__cont .b-forms-btn {
+  margin: 45px 130px 0;
+}
+.b-dawn-content .b-b-wrap {
+  position: absolute;
+  top: 0;
+  background: transparent url("../images/Langle.png") left top no-repeat;
+}
+.b-dawn-content .b-b-wrapp {
+  background: transparent url("../images/Rangle.png") right top no-repeat;
+}
+
 .b-tours .owl-carousel-three {
   margin-top: 40px;
 }
@@ -573,6 +661,88 @@ nav .b-social .b-social-network .b-social-pages:hover {
   color: #f99c45;
 }
 
+.b-forms input {
+  padding-left: 15px;
+  width: 220px;
+  padding-bottom: 11px;
+  padding-top: 11px;
+  border: none;
+  border-radius: 7px;
+  margin-left: 5px;
+  -webkit-box-shadow: inset 0px 3px 6px rgba(0, 0, 0, 0.06);
+          box-shadow: inset 0px 3px 6px rgba(0, 0, 0, 0.06);
+}
+.b-forms input::-webkit-input-placeholder {
+  color: #e3c5aa;
+}
+.b-forms input::-moz-placeholder {
+  color: #e3c5aa;
+}
+.b-forms input:-ms-input-placeholder {
+  color: #e3c5aa;
+}
+.b-forms input::-ms-input-placeholder {
+  color: #e3c5aa;
+}
+.b-forms input::placeholder {
+  color: #e3c5aa;
+}
+.b-forms input[type=date] {
+  background-image: url(../images/);
+}
+.b-forms input[type=date]:before {
+  color: #e3c5aa;
+  content: attr(placeholder) !important;
+}
+.b-forms input[type=date]::-webkit-datetime-edit-text {
+  -webkit-appearance: none;
+  display: none;
+}
+.b-forms input[type=date]::-webkit-datetime-edit-month-field {
+  -webkit-appearance: none;
+  display: none;
+}
+.b-forms input[type=date]::-webkit-datetime-edit-day-field {
+  -webkit-appearance: none;
+  display: none;
+}
+.b-forms input[type=date]::-webkit-datetime-edit-year-field {
+  -webkit-appearance: none;
+  display: none;
+}
+.b-forms input::-webkit-calendar-picker-indicator {
+  opacity: 0;
+  width: 60px;
+  z-index: 1;
+}
+.b-forms #calendarIcon {
+  position: relative;
+  z-index: inherit;
+  left: -25px;
+  top: 1px;
+  color: #f99c45;
+  cursor: pointer;
+  width: 0;
+}
+.b-forms button {
+  color: #f99c45;
+  font-size: 20px;
+  font-weight: 800;
+  text-align: center;
+  line-height: 24px;
+  border: none;
+  padding-bottom: 11px;
+  padding-top: 11px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#ffffff), color-stop(47.4%, #f9f9f9), to(#eeeff5));
+  background: linear-gradient(180deg, #ffffff 0%, #f9f9f9 47.4%, #eeeff5 100%);
+  -webkit-box-shadow: 0px 9px 15px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 9px 15px rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+  padding-left: 25px;
+  padding-right: 25px;
+  margin-left: 20px;
+}
+
 .b-banner {
   font-family: "Gilroy";
   font-weight: 500;
@@ -646,87 +816,6 @@ nav .b-social .b-social-network .b-social-pages:hover {
   -webkit-box-shadow: inset 0px 3px 6px rgba(0, 0, 0, 0.06);
           box-shadow: inset 0px 3px 6px rgba(0, 0, 0, 0.06);
   cursor: pointer;
-}
-.b-banner input {
-  padding-left: 15px;
-  width: 220px;
-  padding-bottom: 11px;
-  padding-top: 11px;
-  border: none;
-  border-radius: 7px;
-  margin-left: 5px;
-  -webkit-box-shadow: inset 0px 3px 6px rgba(0, 0, 0, 0.06);
-          box-shadow: inset 0px 3px 6px rgba(0, 0, 0, 0.06);
-}
-.b-banner input::-webkit-input-placeholder {
-  color: #e3c5aa;
-}
-.b-banner input::-moz-placeholder {
-  color: #e3c5aa;
-}
-.b-banner input:-ms-input-placeholder {
-  color: #e3c5aa;
-}
-.b-banner input::-ms-input-placeholder {
-  color: #e3c5aa;
-}
-.b-banner input::placeholder {
-  color: #e3c5aa;
-}
-.b-banner input[type=date] {
-  background-image: url(../images/);
-}
-.b-banner input[type=date]:before {
-  color: #e3c5aa;
-  content: attr(placeholder) !important;
-}
-.b-banner input[type=date]::-webkit-datetime-edit-text {
-  -webkit-appearance: none;
-  display: none;
-}
-.b-banner input[type=date]::-webkit-datetime-edit-month-field {
-  -webkit-appearance: none;
-  display: none;
-}
-.b-banner input[type=date]::-webkit-datetime-edit-day-field {
-  -webkit-appearance: none;
-  display: none;
-}
-.b-banner input[type=date]::-webkit-datetime-edit-year-field {
-  -webkit-appearance: none;
-  display: none;
-}
-.b-banner input::-webkit-calendar-picker-indicator {
-  opacity: 0;
-  width: 60px;
-  z-index: 1;
-}
-.b-banner #calendarIcon {
-  position: relative;
-  z-index: inherit;
-  left: -25px;
-  top: 1px;
-  color: #f99c45;
-  cursor: pointer;
-  width: 0;
-}
-.b-banner button {
-  color: #f99c45;
-  font-size: 20px;
-  font-weight: 800;
-  text-align: center;
-  line-height: 24px;
-  border: none;
-  padding-bottom: 11px;
-  padding-top: 11px;
-  background: -webkit-gradient(linear, left top, left bottom, from(#ffffff), color-stop(47.4%, #f9f9f9), to(#eeeff5));
-  background: linear-gradient(180deg, #ffffff 0%, #f9f9f9 47.4%, #eeeff5 100%);
-  -webkit-box-shadow: 0px 9px 15px rgba(0, 0, 0, 0.1);
-          box-shadow: 0px 9px 15px rgba(0, 0, 0, 0.1);
-  border-radius: 4px;
-  padding-left: 25px;
-  padding-right: 25px;
-  margin-left: 20px;
 }
 
 .b-hotels-cards:hover img {
@@ -1034,10 +1123,11 @@ main.__visa ol li:before {
   color: #e3c5aa;
   height: 2px;
 }
-.b-banner-head .b-forms-btn {
+
+.b-forms-btn {
   margin-top: 35px;
 }
-.b-banner-head .b-forms-btn .b-forms-link {
+.b-forms-btn .b-forms-link {
   color: #fff;
   font-weight: 800;
   font-size: 20px;
