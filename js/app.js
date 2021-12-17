@@ -1,5 +1,14 @@
+function listen(evnt, elem, func) {
+  if (elem.addEventListener)  // W3C DOM
+      elem.addEventListener(evnt,func,false);
+  else if (elem.attachEvent) { // IE DOM
+       var r = elem.attachEvent("on"+evnt, func);
+       return r;
+  }
+  else window.alert('I\'m sorry Dave, I\'m afraid I can\'t do that.');
+}
+
 $(document).ready(function() {
-  window.onload = init;
     $('.select').css('color','#E3C5AA');
     $('.select').change(function() {
        var current = $('.select').val();
