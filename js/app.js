@@ -1,4 +1,5 @@
 $(document).ready(function() {
+  window.onload = init;
     $('.select').css('color','#E3C5AA');
     $('.select').change(function() {
        var current = $('.select').val();
