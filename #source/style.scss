@@ -432,11 +432,7 @@ main.__index {
 }
 }
 .b-dawn-content {
-	background-image: url(../images/bg-in-dawn.png);
-	background-position: center;
-	background-repeat:  no-repeat;
-	background-size: cover;
-	z-index: 22;
+	position: relative;
 		.wrapper {
 			max-width: 900px;
 			margin: 0 auto;
@@ -497,6 +493,13 @@ main.__index {
 				top: 0;
 				background: transparent url('../images/Langle.png') left top no-repeat;	
 			}
+			.b-wrap-cont {
+				opacity: 0;
+					// img {
+					// 	width: 104%;
+					// }
+				// margin-left: -20px;
+			}
 			// .b-linear {
 			// 	height: 200px;
 			// 	width: 3px;
@@ -531,7 +534,91 @@ main.__index {
 		// 	// 	border-radius: 10px;
 		// 	// }
 		// }
+
+		.b-cloud {
+			position: absolute;
+			z-index: 1;
+		}
+		.b-cloud.one {
+			right: 0;
+			top: 0px;
+			img {
+					animation-name: cloud-one;
+					animation-duration: 30s;
+					animation-iteration-count: infinite;		
+			}
+
+		}
+		.b-cloud.two {
+			top: 200px;
+
+			img {
+				animation-name: cloud-two;
+				animation-duration: 30s;
+				animation-iteration-count: infinite;		
+		}
+		}
+		.b-cloud.three {
+			top: 300px;
+			right: 0;
+
+			img {
+				animation-name: cloud-three;
+				animation-duration: 30s;
+				animation-iteration-count: infinite;		
+		}
+		}
 }
+@keyframes cloud-one {
+	0%{
+		top: 0;
+		margin-right: 0;
+	}
+	25% {
+		top: 0;
+		margin-right: 940px;
+	}
+	100% {
+		right: 0;
+		top: 0;
+	}
+}
+@keyframes cloud-two {
+	0%{
+		top: 200px;
+		margin-right: 0;
+	}
+	25% {
+		top: 200px;
+		margin-left: 940px;
+	}
+	100% {
+		left: 0;
+		top: 200px;
+	}
+}
+@keyframes cloud-three {
+	0%{
+		top: 0;
+		margin-right: 0;
+	}
+	25% {
+		top: 0;
+		margin-right: 940px;
+	}
+	100% {
+		right: 0;
+		top: 0;
+	}
+}
+// .b-bg-in {
+// 	background-image: url(../images/bg-in-dawn.png);
+// 	background-position: center;
+// 	background-repeat:  no-repeat;
+// 	background-size: cover;
+// 	z-index: 22;
+// 	padding: 250px 0;
+// }
 .b-tours {
 	.owl-carousel-three {
 		margin-top: 40px;

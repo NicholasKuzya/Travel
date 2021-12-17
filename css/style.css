@@ -323,11 +323,7 @@ main.__index .b-banner .b-banner-content a {
 }
 
 .b-dawn-content {
-  background-image: url(../images/bg-in-dawn.png);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  z-index: 22;
+  position: relative;
 }
 .b-dawn-content .wrapper {
   max-width: 900px;
@@ -406,10 +402,137 @@ main.__index .b-banner .b-banner-content a {
   top: 0;
   background: transparent url("../images/Langle.png") left top no-repeat;
 }
+.b-dawn-content .b-wrap-cont {
+  opacity: 0;
+}
 .b-dawn-content .b-b-wrapp {
   background: transparent url("../images/Rangle.png") right top no-repeat;
 }
+.b-dawn-content .b-cloud {
+  position: absolute;
+  z-index: 1;
+}
+.b-dawn-content .b-cloud.one {
+  right: 0;
+  top: 0px;
+}
+.b-dawn-content .b-cloud.one img {
+  -webkit-animation-name: cloud-one;
+          animation-name: cloud-one;
+  -webkit-animation-duration: 30s;
+          animation-duration: 30s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+.b-dawn-content .b-cloud.two {
+  top: 200px;
+}
+.b-dawn-content .b-cloud.two img {
+  -webkit-animation-name: cloud-two;
+          animation-name: cloud-two;
+  -webkit-animation-duration: 30s;
+          animation-duration: 30s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+.b-dawn-content .b-cloud.three {
+  top: 300px;
+  right: 0;
+}
+.b-dawn-content .b-cloud.three img {
+  -webkit-animation-name: cloud-three;
+          animation-name: cloud-three;
+  -webkit-animation-duration: 30s;
+          animation-duration: 30s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
 
+@-webkit-keyframes cloud-one {
+  0% {
+    top: 0;
+    margin-right: 0;
+  }
+  25% {
+    top: 0;
+    margin-right: 940px;
+  }
+  100% {
+    right: 0;
+    top: 0;
+  }
+}
+
+@keyframes cloud-one {
+  0% {
+    top: 0;
+    margin-right: 0;
+  }
+  25% {
+    top: 0;
+    margin-right: 940px;
+  }
+  100% {
+    right: 0;
+    top: 0;
+  }
+}
+@-webkit-keyframes cloud-two {
+  0% {
+    top: 200px;
+    margin-right: 0;
+  }
+  25% {
+    top: 200px;
+    margin-left: 940px;
+  }
+  100% {
+    left: 0;
+    top: 200px;
+  }
+}
+@keyframes cloud-two {
+  0% {
+    top: 200px;
+    margin-right: 0;
+  }
+  25% {
+    top: 200px;
+    margin-left: 940px;
+  }
+  100% {
+    left: 0;
+    top: 200px;
+  }
+}
+@-webkit-keyframes cloud-three {
+  0% {
+    top: 0;
+    margin-right: 0;
+  }
+  25% {
+    top: 0;
+    margin-right: 940px;
+  }
+  100% {
+    right: 0;
+    top: 0;
+  }
+}
+@keyframes cloud-three {
+  0% {
+    top: 0;
+    margin-right: 0;
+  }
+  25% {
+    top: 0;
+    margin-right: 940px;
+  }
+  100% {
+    right: 0;
+    top: 0;
+  }
+}
 .b-tours .owl-carousel-three {
   margin-top: 40px;
 }
