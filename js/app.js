@@ -19,12 +19,22 @@ $(document).ready(function() {
        }
     });
  });
+ offersSlider = $(".owl-carousel-three");
  $(document).ready(function(){
   $(".owl-carousel-three").owlCarousel({
     items:3,           
     margin: 30,
-    nav: true,
+    loop: true,
+    autoplay: true
   })
+  $('.b-owl-prev').click(function(){
+    offersSlider.trigger('prev.owl.carousel');
+
+});
+$('.b-owl-next').click(function(){
+    offersSlider.trigger('next.owl.carousel');
+
+})
 });
  $(document).ready(function(){
   $(".owl-carousel").owlCarousel({
@@ -37,6 +47,6 @@ $(document).ready(function() {
     loop:true,     
     margin:0,
     margin: 90,
-    nav: true,
+    nav:true
   })
 });

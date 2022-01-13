@@ -296,43 +296,86 @@ main.__index .b-banner .b-banner-content a {
 .b-uzb-about .b-carousel img {
   width: 1000px;
   height: 500px;
+  opacity: 0.4;
+}
+.b-uzb-about .b-carousel .owl-item.active img {
+  opacity: 1;
 }
 .b-uzb-about .b-carousel .owl-item.active svg {
   opacity: 1;
 }
 
+.owl-carousel .b-carousel-image {
+  position: relative;
+}
 .owl-carousel .owl-nav button {
   width: 55px;
   height: 55px;
   border-radius: 50%;
   position: absolute;
-  margin-top: -282px;
+  top: 42%;
 }
 .owl-carousel .owl-nav .owl-prev {
   background: #f99c45 url(../images/prev.png) center no-repeat !important;
   background-size: cover;
-  margin-left: 9%;
+  left: 9%;
 }
 .owl-carousel .owl-nav .owl-next {
   background: #f99c45 url(../images/next.png) center no-repeat !important;
   background-size: cover;
-  margin-left: 1275px;
+  right: 9%;
 }
 .owl-carousel .owl-nav span {
   display: none;
 }
 
+.b-dawn-content::after {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  width: 100%;
+  height: 680px;
+  display: block;
+  background-size: 100%;
+  background-position: center bottom;
+  background-image: url(../images/bg-in-dawn.png);
+  background-repeat: no-repeat;
+  z-index: 3;
+}
+
 .b-dawn-content {
   position: relative;
+  background-image: url(../images/bg.png);
+  min-height: 900px;
 }
 .b-dawn-content .wrapper {
   max-width: 900px;
-  margin: 0 auto;
+  margin: 100px auto;
+}
+.b-dawn-content .wrapper .b-subtitle-text {
   position: relative;
-  background: -webkit-gradient(linear, left top, left bottom, from(#F9D8B9), color-stop(63.78%, #FBF2E6));
-  background: linear-gradient(180deg, #F9D8B9 0%, #FBF2E6 63.78%);
+  margin-top: -40px;
+}
+.b-dawn-content .wrapper .b-subtitle-text h3 {
+  left: 39%;
+  position: absolute;
+  margin-top: -40px;
+}
+.b-dawn-content .b-contact-wrappers {
+  padding-top: 180px;
+}
+.b-dawn-content .wrapper::before {
+  content: "";
+  position: absolute;
+  width: 902px;
+  height: 80%;
+  background-image: url(../images/frame.svg);
+  background-size: 100%;
+  background-repeat: no-repeat;
 }
 .b-dawn-content .b-contacts {
+  position: absolute;
   list-style-type: none;
   border: 3px dashed #fff;
   -webkit-box-pack: center;
@@ -371,7 +414,9 @@ main.__index .b-banner .b-banner-content a {
   font-size: 25px;
 }
 .b-dawn-content .__cont {
-  margin: 55px 145px 0;
+  position: absolute;
+  margin: 170px 145px 0;
+  z-index: 10;
 }
 .b-dawn-content .__cont input {
   width: 270px;
@@ -396,17 +441,6 @@ main.__index .b-banner .b-banner-content a {
 }
 .b-dawn-content .__cont .b-forms-btn {
   margin: 45px 130px 0;
-}
-.b-dawn-content .b-b-wrap {
-  position: absolute;
-  top: 0;
-  background: transparent url("../images/Langle.png") left top no-repeat;
-}
-.b-dawn-content .b-wrap-cont {
-  opacity: 0;
-}
-.b-dawn-content .b-b-wrapp {
-  background: transparent url("../images/Rangle.png") right top no-repeat;
 }
 .b-dawn-content .b-cloud {
   position: absolute;
@@ -536,14 +570,6 @@ main.__index .b-banner .b-banner-content a {
 .b-tours .owl-carousel-three {
   margin-top: 40px;
 }
-.b-tours .owl-carousel-three .owl-nav button.owl-prev {
-  margin-left: 90%;
-  margin-top: -47%;
-}
-.b-tours .owl-carousel-three .owl-nav button.owl-next {
-  margin-left: 95%;
-  margin-top: -608px;
-}
 .b-tours .owl-item {
   width: 410px !important;
 }
@@ -560,17 +586,25 @@ main.__index .b-banner .b-banner-content a {
   font-size: 40px;
   line-height: 52px;
   color: #2f383e;
-  position: relative;
 }
-.b-tours .b-tours-title h3::after {
-  content: "";
-  top: 50%;
-  opacity: 0.5;
-  right: 140px;
-  width: 60%;
+.b-tours .b-tours-title .dividors {
   height: 2px;
+  width: 60%;
   background-color: #e3c5aa;
-  position: absolute;
+  opacity: 0.5;
+  margin-top: 80px;
+  margin-left: 20px;
+}
+.b-tours .b-tours-title .b-owl-nav {
+  margin-top: 50px;
+  margin-left: 45px;
+}
+.b-tours .b-tours-title .b-owl-nav button {
+  border: none;
+  background-color: #FFB423;
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
 }
 
 .b-tours-cards {
@@ -1066,6 +1100,9 @@ footer {
   margin-top: 135px;
   height: 90px;
   background-image: url(../images/bg-footer.png);
+}
+footer.__index {
+  margin-top: 0;
 }
 footer .b-footer-info {
   -webkit-box-pack: justify;
